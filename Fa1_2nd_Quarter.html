@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LG 7.2</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Zachary Venz D. Valenzona">
+    <meta name="section" content="Calcium">
+    <meta name="revised" content="11-17-2023">
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    #link1:link {
+        font-size: 18px;
+        background-color: navy; /* Updated color */
+        color: lime; /* Updated color */
+        text-decoration: none;
+    }
+
+    #link1:visited {
+        background-color: navy; /* Updated color */
+        color: white;
+    }
+
+    #link1:hover {
+        background-color: darkblue; /* Updated color */
+        color: lime; /* Updated color */
+    }
+
+    #link1:active {
+        background-color: orange; /* Updated color */
+        color: black;
+    }
+
+    #div1 {
+        position: absolute;
+        top: 60px;
+        float: left;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+
+    #link2:link {
+        position: absolute;
+        left: 130px;
+        font-size: 18px;
+        background-color: maroon; /* Updated color */
+        text-decoration: none;
+    }
+
+    #link2:visited {
+        background-color: maroon; /* Updated color */
+        color: white;
+    }
+
+    #link2:hover {
+        background-color: darkred; /* Updated color */
+        color: yellow; /* Updated color */
+    }
+
+    #link2:active {
+        background-color: orangered; /* Updated color */
+        color: black;
+    }
+
+    #div2 {
+        position: absolute;
+        top: 180px;
+        width: 100px;
+        height: 100px;
+        float: left;
+        border: 1px solid black;
+    }
+
+    #div1:target {
+        background-color: red;
+        color: white;
+    }
+
+    #div2:target {
+        background-color: red;
+        border: 15px dotted blue;
+        color: white;
+    }
+</style>
+
+<body>
+<ul>
+    <li><a id="link1" href="#div1">First Link</a></li>
+    <li><a id="link2" href="#div2">Second Link</a></li>
+</ul>
+
+<div id="div1">Div 1 here</div>
+<div id="div2">Div 2 here</div>
+</body>
+</html>
